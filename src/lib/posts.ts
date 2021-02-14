@@ -76,3 +76,15 @@ export function listPostContent(
     .filter((it) => !tag || (it.tags && it.tags.includes(tag)))
     .slice((page - 1) * limit, page * limit);
 }
+
+export function geAboutData(): any {
+  let doc: any;
+  try {
+    doc = yaml.load(fs.readFileSync("site/content/about.yml", "utf8"));
+    console.log(doc);
+  } catch (e) {
+    console.log(e);
+  }
+
+  return doc;
+}
