@@ -141,7 +141,7 @@ collections:
         widget: "markdown"
 
   - name: "homepage"
-    label: "Posts"
+    label: "Homepage"
     folder: "src/pages"
     extension: "mdx"
     format: "frontmatter"
