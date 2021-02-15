@@ -35,9 +35,9 @@ collections:
             name: "mision"
             widget: "relation"
             collection: "missionSection"
-            file: "mission"
+            file: missionSection.mission
             searchFields: mission
-            valueField: mission
+            valueField: missionSection.mission
       - label: "About Page"
         name: "about"
         file: "src/pages/files/about.yml"
