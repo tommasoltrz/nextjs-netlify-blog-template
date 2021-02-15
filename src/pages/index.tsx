@@ -6,34 +6,28 @@ import { gePageData } from "../lib/pages";
 import styles from "./homepage.module.scss";
 
 type Props = {
-  herotitle: string;
+  hero_title: string;
 };
 
-export default function Index() {
-  // console.log(herotitle);
+export default function Index({ hero_title }: Props) {
   return (
     <Layout>
       <BasicMeta url={"/"} />
       <div className={styles.container}>
         <div>
-          <h1>
-            Hi, We're Next.js & Netlify<span className={styles.fancy}>.</span>
-          </h1>
-          <span className={styles.handle}>@nextjs-netlify-blog</span>
-          <h2>A blog template with Next.js and Netlify.</h2>
-          <SocialList />
+          <h1>{hero_title}</h1>
         </div>
       </div>
     </Layout>
   );
 }
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const data = gePageData("homepage");
-//   const { herotitle } = data.en;
-//   return {
-//     props: {
-//       herotitle,
-//     },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  const data = gePageData("homepage");
+  const { hero_title } = data.en;
+  return {
+    props: {
+      hero_title,
+    },
+  };
+};

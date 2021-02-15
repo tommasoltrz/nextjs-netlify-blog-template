@@ -20,41 +20,51 @@ i18n:
   default_locale: en
 
 collections:
-  - name: "config"
-    label: "Config"
-    delete: false
-    editor:
-      preview: false
+  - name: "pages"
+    label: "Pages"
+    i18n:
+      structure: single_file
     files:
-      - name: "general"
-        label: "Site Config"
-        file: "config.json"
-        description: "General site settings"
+      - label: "HomePage"
+        name: "homepage"
+        file: "src/pages/files/homepage.yml"
+        i18n: true
         fields:
-          - label: "URL"
-            name: "base_url"
-            widget: "string"
-            hint: "Do not enter the trailing slash of the URL"
-          - label: "Site title"
-            name: "site_title"
-            widget: "string"
-          - label: "Site description"
-            name: "site_description"
-            widget: "string"
-          - label: "Site keywords"
-            name: "site_keywords"
-            widget: "list"
-            summary: "{{fields.keyword.keyword}}"
-            field:
-              label: Keyword
-              name: keyword
-              widget: "string"
-          - label: "GitHub account"
-            name: "github_account"
-            widget: "string"
+          - { label: Hero Title, name: hero_title, widget: string, i18n: true }
+      - label: "About Page"
+        name: "about"
+        file: "src/pages/files/about.yml"
+        i18n: true
+        fields:
+          - { label: Title, name: title, widget: string, i18n: true }
+          - { label: Intro, name: intro, widget: markdown, i18n: true }
+          - label: Image
+            name: image
+            widget: image
+
+  - name: mission
+    label: What we do
+    folder: "src/pages/files/mission.yml"
+    i18n: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        i18n: true
+      - label: Subtitle
+        name: subtitle
+        widget: string
+        i18n: true
+      - label: body
+        name: body
+        widget: markdown
+        i18n: true
+      - label: Image
+        name: image
+        widget: image
 
   - name: "posts"
-    label: "Posts"
+    label: "Projects"
     folder: "src/pages/posts"
     extension: "mdx"
     format: "frontmatter"
@@ -105,39 +115,35 @@ collections:
         name: "body"
         widget: "markdown"
 
-  - label: "Pages"
-    name: "pages"
-    i18n:
-      structure: single_file
+  - name: "config"
+    label: "Config"
+    delete: false
+    editor:
+      preview: false
     files:
-      - label: "About Page"
-        name: "about"
-        file: "src/pages/files/about.yml"
-        i18n: true
+      - name: "general"
+        label: "Site Config"
+        file: "config.json"
+        description: "General site settings"
         fields:
-          - { label: Title, name: title, widget: string, i18n: true }
-          - { label: Intro, name: intro, widget: markdown, i18n: true }
-      - label: "HomePage"
-        name: "homepage"
-        file: "src/pages/files/homepage.yml"
-        i18n: true
-        fields:
-          - { label: Hero Title, name: hero_title, widget: string, i18n: true }
-
-  - name: tests
-    label: Tests
-    folder: src/pages/posts
-    create: true
-    i18n: true
-    fields:
-      - label: Title
-        name: title
-        widget: string
-        i18n: true
-      - label: Date
-        name: date
-        widget: datetime
-        i18n: duplicate
-      - label: Body
-        name: body
-        widget: markdown
+          - label: "URL"
+            name: "base_url"
+            widget: "string"
+            hint: "Do not enter the trailing slash of the URL"
+          - label: "Site title"
+            name: "site_title"
+            widget: "string"
+          - label: "Site description"
+            name: "site_description"
+            widget: "string"
+          - label: "Site keywords"
+            name: "site_keywords"
+            widget: "list"
+            summary: "{{fields.keyword.keyword}}"
+            field:
+              label: Keyword
+              name: keyword
+              widget: "string"
+          - label: "GitHub account"
+            name: "github_account"
+            widget: "string"

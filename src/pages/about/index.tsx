@@ -2,7 +2,7 @@ import React from "react";
 import BasicMeta from "../../components/meta/BasicMeta";
 import Layout from "../../components/Layout";
 import { GetStaticProps } from "next";
-import { geAboutData } from "../../lib/pages";
+import { gePageData } from "../../lib/pages";
 
 type Props = {
   title: string;
@@ -21,7 +21,7 @@ export default function Index({ title, intro }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = geAboutData();
+  const data = gePageData("about");
   const { title, intro } = data.en;
   return {
     props: {
