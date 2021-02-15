@@ -43,25 +43,32 @@ collections:
             widget: image
 
   - name: mission
-    label: What we do
-    folder: "src/pages/files/mission.yml"
-    i18n: true
-    fields:
-      - label: Title
-        name: title
-        widget: string
+    label: Mission
+    delete: false
+    i18n:
+      structure: single_file
+    files:
+      - name: "mission"
+        label: "Mission"
+        file: "src/pages/files/mission.yml"
+        description: "Our Mission"
         i18n: true
-      - label: Subtitle
-        name: subtitle
-        widget: string
-        i18n: true
-      - label: body
-        name: body
-        widget: markdown
-        i18n: true
-      - label: Image
-        name: image
-        widget: image
+        files:
+          - label: Title
+            name: title
+            widget: string
+            i18n: true
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            i18n: true
+          - label: body
+            name: body
+            widget: markdown
+            i18n: true
+          - label: Image
+            name: image
+            widget: image
 
   - name: "posts"
     label: "Projects"
