@@ -35,6 +35,7 @@ collections:
             name: "mision"
             widget: "relation"
             collection: "missionSection"
+            file: "mission"
             searchFields: mission
             valueField: mission
       - label: "About Page"
