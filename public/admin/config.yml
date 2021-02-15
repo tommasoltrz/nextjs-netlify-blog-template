@@ -45,6 +45,9 @@ collections:
           - label: Image
             name: image
             widget: image
+            search_fields: ["name.first", "twitterHandle"]
+            value_field: "name.first"
+            display_fields: ["twitterHandle", "followerCount"]
 
   - name: mission
     label: Mission
