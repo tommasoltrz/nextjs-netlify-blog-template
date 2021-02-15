@@ -24,6 +24,8 @@ export default function Index({ hero_title }: Props) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const data = gePageData("homepage");
+  const mission = gePageData("mission");
+  console.log(mission);
   const { hero_title } = data.en;
   return {
     props: {

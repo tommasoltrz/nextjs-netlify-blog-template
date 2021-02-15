@@ -41,6 +41,10 @@ collections:
           - label: Image
             name: image
             widget: image
+      - label: "Mission"
+        name: "mision"
+        widget: "relation"
+        collection: "mission"
 
   - name: mission
     label: Mission
