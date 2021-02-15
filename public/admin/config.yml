@@ -112,11 +112,17 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "site/content/about.yml"
+        file: "src/pages/files/about.yml"
         i18n: true
         fields:
           - { label: Title, name: title, widget: string, i18n: true }
           - { label: Intro, name: intro, widget: markdown, i18n: true }
+      - label: "HomePage"
+        name: "about"
+        file: "src/pages/files/homepage.yml"
+        i18n: true
+        fields:
+          - { label: Hero Title, name: hero_title, widget: string, i18n: true }
 
   - name: tests
     label: Tests
