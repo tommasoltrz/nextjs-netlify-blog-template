@@ -35,6 +35,9 @@ collections:
             name: "mision"
             widget: "relation"
             collection: "mission"
+            search_fields: ["name.first", "twitterHandle"]
+            value_field: "name.first"
+            display_fields: ["twitterHandle", "followerCount"]
       - label: "About Page"
         name: "about"
         file: "src/pages/files/about.yml"
@@ -45,9 +48,6 @@ collections:
           - label: Image
             name: image
             widget: image
-            search_fields: ["name.first", "twitterHandle"]
-            value_field: "name.first"
-            display_fields: ["twitterHandle", "followerCount"]
 
   - name: mission
     label: Mission
