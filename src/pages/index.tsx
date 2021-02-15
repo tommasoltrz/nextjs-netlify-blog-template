@@ -9,8 +9,8 @@ type Props = {
   herotitle: string;
 };
 
-export default function Index({ herotitle }: Props) {
-  console.log(herotitle);
+export default function Index() {
+  // console.log(herotitle);
   return (
     <Layout>
       <BasicMeta url={"/"} />
@@ -28,12 +28,12 @@ export default function Index({ herotitle }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const data = gePageData("homepage");
-  const { herotitle } = data.en;
-  return {
-    props: {
-      herotitle,
-    },
-  };
-};
+// export const getStaticProps: GetStaticProps = async () => {
+//   const data = gePageData("homepage");
+//   const { herotitle } = data.en;
+//   return {
+//     props: {
+//       herotitle,
+//     },
+//   };
+// };
