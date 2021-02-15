@@ -34,7 +34,7 @@ collections:
           - label: "Mission"
             name: "mision"
             widget: "relation"
-            collection: "mission"
+            collection: "missionSection"
             file: mission
             searchFields: ["mission.*.title"]
             display_fields: ["mission.*.title"]
