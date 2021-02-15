@@ -8,6 +8,15 @@ export function geAboutData(): any {
   } catch (e) {
     console.log(e);
   }
-  console.log(doc);
+  return doc;
+}
+
+export function gePageData(pageName: string): any {
+  let doc: any;
+  try {
+    doc = yaml.load(fs.readFileSync(`src/pages/files/${pageName}.yml`, "utf8"));
+  } catch (e) {
+    console.log(e);
+  }
   return doc;
 }

@@ -23,7 +23,6 @@ export default function Index({ title, intro }: Props) {
 export const getStaticProps: GetStaticProps = async () => {
   const data = geAboutData();
   const { title, intro } = data.en;
-  console.log("hey");
   return {
     props: {
       title,
