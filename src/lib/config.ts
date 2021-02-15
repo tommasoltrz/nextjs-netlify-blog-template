@@ -5,7 +5,6 @@ type Config = {
   readonly site_title: string;
   readonly site_description: string;
   readonly site_keywords: string[];
-  readonly posts_per_page: number;
   readonly github_account: string;
 };
 

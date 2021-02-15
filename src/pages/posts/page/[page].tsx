@@ -29,24 +29,19 @@ export default function Page({ posts, tags, pagination, page }: Props) {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const page = parseInt(params.page as string);
-  const posts = listPostContent(page, config.posts_per_page);
+  const posts = listPostContent(page, countPosts());
   const tags = listTags();
-  const pagination = {
-    current: page,
-    pages: Math.ceil(countPosts() / config.posts_per_page),
-  };
   return {
     props: {
       page,
       posts,
       tags,
-      pagination,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const pages = Math.ceil(countPosts() / config.posts_per_page);
+  const pages = 1;
   const paths = Array.from(Array(pages - 1).keys()).map((it) => ({
     params: { page: (it + 2).toString() },
   }));

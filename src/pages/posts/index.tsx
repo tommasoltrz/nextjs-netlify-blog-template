@@ -21,24 +21,19 @@ export default function Index({ posts, tags, pagination }: Props) {
   return (
     <Layout>
       <BasicMeta url={url} title={title} />
-
       <PostList posts={posts} tags={tags} pagination={pagination} />
     </Layout>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = listPostContent(1, config.posts_per_page);
+  const posts = listPostContent(1, countPosts());
   const tags = listTags();
-  const pagination = {
-    current: 1,
-    pages: Math.ceil(countPosts() / config.posts_per_page),
-  };
+
   return {
     props: {
       posts,
       tags,
-      pagination,
     },
   };
 };
