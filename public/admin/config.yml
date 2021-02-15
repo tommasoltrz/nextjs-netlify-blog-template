@@ -161,3 +161,21 @@ collections:
         fields:
           - { label: Title, name: title, widget: string, i18n: true }
           - { label: Intro, name: intro, widget: markdown, i18n: true }
+
+  - name: tests
+    label: Tests
+    folder: src/pages/posts
+    create: true
+    i18n: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        i18n: true
+      - label: Date
+        name: date
+        widget: datetime
+        i18n: duplicate
+      - label: Body
+        name: body
+        widget: markdown
