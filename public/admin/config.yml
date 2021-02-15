@@ -53,7 +53,7 @@ collections:
         file: "src/pages/files/mission.yml"
         description: "Our Mission"
         i18n: true
-        files:
+        fields:
           - label: Title
             name: title
             widget: string
