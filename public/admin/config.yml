@@ -34,9 +34,9 @@ collections:
           - label: "Mission"
             name: "mision"
             widget: "relation"
-            collection: "mission"
-            searchFields: mision
-            valueField: mision
+            collection: "missionSection"
+            searchFields: mission
+            valueField: mission
       - label: "About Page"
         name: "about"
         file: "src/pages/files/about.yml"
@@ -48,8 +48,8 @@ collections:
             name: image
             widget: image
 
-  - name: mission
-    label: Mission
+  - name: missionSection
+    label: Mission Section
     delete: false
     i18n:
       structure: single_file
