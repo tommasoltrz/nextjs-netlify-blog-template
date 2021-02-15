@@ -6,9 +6,6 @@ import Copyright from "../components/Copyright";
 import Date from "../components/Date";
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
-import JsonLdMeta from "../components/meta/JsonLdMeta";
-import OpenGraphMeta from "../components/meta/OpenGraphMeta";
-import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 import TagButton from "../components/TagButton";
 import { getAuthor } from "../lib/authors";
@@ -39,24 +36,6 @@ export default function Index({
           url={`/posts/${slug}`}
           title={title}
           keywords={keywords}
-          description={description}
-        />
-        <TwitterCardMeta
-          url={`/posts/${slug}`}
-          title={title}
-          description={description}
-        />
-        <OpenGraphMeta
-          url={`/posts/${slug}`}
-          title={title}
-          description={description}
-        />
-        <JsonLdMeta
-          url={`/posts/${slug}`}
-          title={title}
-          keywords={keywords}
-          date={date}
-          author={authorName}
           description={description}
         />
         <div className={"container"}>
