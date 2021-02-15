@@ -31,6 +31,10 @@ collections:
         i18n: true
         fields:
           - { label: Hero Title, name: hero_title, widget: string, i18n: true }
+          - label: "Mission"
+            name: "mision"
+            widget: "relation"
+            collection: "mission"
       - label: "About Page"
         name: "about"
         file: "src/pages/files/about.yml"
@@ -41,10 +45,6 @@ collections:
           - label: Image
             name: image
             widget: image
-      - label: "Mission"
-        name: "mision"
-        widget: "relation"
-        collection: "mission"
 
   - name: mission
     label: Mission
