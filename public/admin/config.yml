@@ -6,17 +6,8 @@ public_folder: /images
 publish_mode: editorial_workflow
 
 i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
   structure: single_file
-
-  # Required - a list of locales to show in the editor UI
   locales: [en, it, fr]
-
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
   default_locale: en
 
 collections:
@@ -39,16 +30,24 @@ collections:
             searchFields: ["title"]
             display_fields: ["title"]
             valueField: "title"
-      - label: "About Page"
-        name: "about"
-        file: "src/pages/files/about.yml"
-        i18n: true
-        fields:
-          - { label: Title, name: title, widget: string, i18n: true }
-          - { label: Intro, name: intro, widget: markdown, i18n: true }
-          - label: Image
-            name: image
-            widget: image
+         - label: "Value"
+            name: "value"
+            widget: "relation"
+            collection: "sections"
+            file: value
+            searchFields: ["title"]
+            display_fields: ["title"]
+            valueField: "title"
+      # - label: "About Page"
+      #   name: "about"
+      #   file: "src/pages/files/about.yml"
+      #   i18n: true
+      #   fields:
+      #     - { label: Title, name: title, widget: string, i18n: true }
+      #     - { label: Intro, name: intro, widget: markdown, i18n: true }
+      #     - label: Image
+      #       name: image
+      #       widget: image
 
   - name: "sections"
     label: "Sections"
@@ -97,34 +96,6 @@ collections:
           - label: Image
             name: image
             widget: image
-
-  # - name: missionSection
-  #   label: Mission Section
-  #   delete: false
-  #   i18n:
-  #     structure: single_file
-  #   files:
-  #     - name: "mission"
-  #       label: "Mission"
-  #       file: "src/pages/files/mission.yml"
-  #       description: "Our Mission"
-  #       i18n: true
-  #       fields:
-  #         - label: Title
-  #           name: title
-  #           widget: string
-  #           i18n: true
-  #         - label: Subtitle
-  #           name: subtitle
-  #           widget: string
-  #           i18n: true
-  #         - label: body
-  #           name: body
-  #           widget: markdown
-  #           i18n: true
-  #         - label: Image
-  #           name: image
-  #           widget: image
 
   - name: "posts"
     label: "Projects"

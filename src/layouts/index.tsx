@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../public/styles/content.module.scss";
 import Copyright from "../components/Copyright";
 import Date from "../components/Date";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import { SocialList } from "../components/SocialList";
 import TagButton from "../components/TagButton";

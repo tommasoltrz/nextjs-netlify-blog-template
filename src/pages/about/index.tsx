@@ -1,6 +1,6 @@
 import React from "react";
 import BasicMeta from "../../components/meta/BasicMeta";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import { GetStaticProps } from "next";
 import { gePageData } from "../../lib/pages";
 

@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import BasicMeta from "../../components/meta/BasicMeta";
 import PostList from "../../components/PostList";
 import config from "../../lib/config";
