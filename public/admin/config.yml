@@ -30,13 +30,13 @@ collections:
             searchFields: ["title"]
             display_fields: ["title"]
             valueField: "title"
-         - label: "Value"
-            name: "value"
-            widget: "relation"
-            collection: "sections"
-            file: value
-            searchFields: ["title"]
-            display_fields: ["title"]
+          - label: "Value"
+              name: "value"
+              widget: "relation"
+              collection: "sections"
+              file: value
+              searchFields: ["title"]
+              display_fields: ["title"]
             valueField: "title"
       # - label: "About Page"
       #   name: "about"
