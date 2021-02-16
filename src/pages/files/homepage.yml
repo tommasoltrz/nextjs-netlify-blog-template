@@ -1,8 +1,12 @@
 en:
   hero_title: I am the hero title
   mision: This is our mission
+  mission: This is our mission
+  value: This is our value
 it:
   hero_title: I am the hero title in italian
   mision: This is our mission
+  mission: This is our mission
+  value: This is our value
 fr:
   hero_title: I am the hero title in french
