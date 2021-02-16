@@ -31,14 +31,14 @@ collections:
         i18n: true
         fields:
           - { label: Hero Title, name: hero_title, widget: string, i18n: true }
-          # - label: "Mission"
-          #   name: "mission"
-          #   widget: "relation"
-          #   collection: "missionSection"
-          #   file: mission
-          #   searchFields: ["title"]
-          #   display_fields: ["title"]
-          #   valueField: "title"
+          - label: "Mission"
+            name: "mission"
+            widget: "relation"
+            collection: "sections"
+            file: mission
+            searchFields: ["title"]
+            display_fields: ["title"]
+            valueField: "title"
       - label: "About Page"
         name: "about"
         file: "src/pages/files/about.yml"
