@@ -6,6 +6,10 @@ module.exports = withMdxEnhanced({
   defaultLayout: true,
   rehypePlugins: [rehypePrism],
 })({
+  i18n: {
+    locales: ["en", "fr", "it"],
+    defaultLocale: "en",
+  },
   pageExtensions: ["mdx", "tsx"],
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(

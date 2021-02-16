@@ -7,6 +7,7 @@ import Mission from "../components/Mission";
 import { gePageData } from "../lib/pages";
 import styles from "./homepage.module.scss";
 import Value, { ValueProps } from "../components/Value/Value";
+import Link from "next/link";
 
 type Props = {
   hero_title: string;
@@ -23,22 +24,18 @@ export default function Index({ hero_title, mission, value }: Props) {
           <h1>{hero_title}</h1>
         </div>
       </div>
-      <div className={styles.container}>
-        <Mission {...mission} />
-      </div>
-      <div className={styles.container}>
-        <Value {...value} />
-      </div>
+      <Mission {...mission} />
+      <Value {...value} />
     </Layout>
   );
 }
-
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  console.log(locale);
   const data = gePageData("homepage");
-  const mission = gePageData("mission").en;
-  const value = gePageData("value").en;
+  const mission = gePageData("mission")[locale];
+  const value = gePageData("value")[locale];
 
-  const { hero_title } = data.en;
+  const { hero_title } = data[locale];
   return {
     props: {
       hero_title,

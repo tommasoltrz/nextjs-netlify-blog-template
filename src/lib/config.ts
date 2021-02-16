@@ -9,3 +9,5 @@ type Config = {
 };
 
 export default config as Config;
+
+export const locale = "it";

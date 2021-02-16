@@ -54,6 +54,23 @@ collections:
     i18n:
       structure: single_file
     files:
+      - name: "hero"
+        label: "Hero"
+        file: "src/pages/files/hero.yml"
+        description: "Hero"
+        i18n: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            i18n: true
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            i18n: true
+          - label: Image
+            name: image
+            widget: image
       - name: "mission"
         label: "Mission"
         file: "src/pages/files/mission.yml"
