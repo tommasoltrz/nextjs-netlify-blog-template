@@ -31,4 +31,18 @@
       max-width: 60%;
     }
   }
+
+  .lang {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    & > * {
+      margin-left: 20px;
+      padding-bottom: 5px;
+      &.active {
+        border-bottom: 4px solid #fff;
+      }
+    }
+  }
 }

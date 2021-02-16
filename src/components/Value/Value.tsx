@@ -15,6 +15,7 @@ const Value: React.FC<ValueProps> = ({ title, subtitle, body, image }) => {
         <div className={"col-12 col-sm-9 col-md-8 col-lg-8"}>
           <h1>{title}</h1>
           <h4>{subtitle}</h4>
+
           <ReactMarkdown>{body}</ReactMarkdown>
         </div>
         <div className={"col-12 col-sm-3 col-md-4 col-lg-4"}>
