@@ -1,5 +1,5 @@
 en:
-  image: /images/photo-1550745165-9bc0b252726f.jpeg
+  image: /images/photo-1564419429381-98dbcf916478.jpeg
   title: This is our value
   subtitle: Whatever that might be
   body: Bring to the table win-win survival strategies to ensure proactive
@@ -15,6 +15,7 @@ it:
     touchpoints for offshoring.
   subtitle: Whatever that might be
   title: This is our value
+  image: /images/photo-1564419429381-98dbcf916478.jpeg
 fr:
   title: This is our value
   subtitle: Whatever that might be
@@ -23,3 +24,4 @@ fr:
     evolved from generation X is on the runway heading towards a streamlined
     cloud solution. User generated content in real-time will have multiple
     touchpoints for offshoring.
+  image: /images/photo-1564419429381-98dbcf916478.jpeg
