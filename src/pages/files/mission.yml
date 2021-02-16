@@ -1,5 +1,5 @@
 en:
-  image: /images/photo-1564419429381-98dbcf916478.jpeg
+  image: /images/photo-1550745165-9bc0b252726f.jpeg
   title: This is our mission
   subtitle: Whatever it might be
   body: >-
@@ -21,6 +21,7 @@ it:
     Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
   subtitle: Whatever it might be
   title: This is our mission
+  image: /images/photo-1550745165-9bc0b252726f.jpeg
 fr:
   title: This is our mission
   subtitle: Whatever it might be
@@ -32,3 +33,4 @@ fr:
 
 
     Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+  image: /images/photo-1550745165-9bc0b252726f.jpeg
