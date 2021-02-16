@@ -8,10 +8,13 @@ export type MissionProps = {
 };
 
 const Mission: React.FC<MissionProps> = ({ title, subtitle, body, image }) => {
-  // console.log(body);
+  const heroImageStyle = {
+    backgroundImage: `url(${image});`,
+  };
+
   return (
-    <div className={styles.missionContainer}>
-      <h2>{title}</h2>
+    <div className={styles.missionContainer} style={heroImageStyle}>
+      <h1>{title}</h1>
     </div>
   );
 };

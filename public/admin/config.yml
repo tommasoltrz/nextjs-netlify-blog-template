@@ -61,6 +61,7 @@ collections:
           - label: Image
             name: image
             widget: image
+            i18n: duplicate
       - name: "mission"
         label: "Mission"
         file: "src/pages/files/mission.yml"
@@ -82,6 +83,7 @@ collections:
           - label: Image
             name: image
             widget: image
+            i18n: duplicate
       - name: "value"
         label: "Value"
         file: "src/pages/files/value.yml"
@@ -103,6 +105,7 @@ collections:
           - label: Image
             name: image
             widget: image
+            i18n: duplicate
 
   # - name: "posts"
   #   label: "Projects"
