@@ -31,14 +31,14 @@ collections:
         i18n: true
         fields:
           - { label: Hero Title, name: hero_title, widget: string, i18n: true }
-          - label: "Mission"
-            name: "mision"
-            widget: "relation"
-            collection: "missionSection"
-            file: mission
-            searchFields: ["title"]
-            display_fields: ["title"]
-            valueField: "title"
+          # - label: "Mission"
+          #   name: "mission"
+          #   widget: "relation"
+          #   collection: "missionSection"
+          #   file: mission
+          #   searchFields: ["title"]
+          #   display_fields: ["title"]
+          #   valueField: "title"
       - label: "About Page"
         name: "about"
         file: "src/pages/files/about.yml"
@@ -50,9 +50,8 @@ collections:
             name: image
             widget: image
 
-  - name: missionSection
-    label: Mission Section
-    delete: false
+  - name: "sections"
+    label: "Sections"
     i18n:
       structure: single_file
     files:
@@ -77,6 +76,55 @@ collections:
           - label: Image
             name: image
             widget: image
+      - name: "value"
+        label: "Value"
+        file: "src/pages/files/value.yml"
+        description: "Our Value"
+        i18n: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            i18n: true
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            i18n: true
+          - label: body
+            name: body
+            widget: markdown
+            i18n: true
+          - label: Image
+            name: image
+            widget: image
+
+  # - name: missionSection
+  #   label: Mission Section
+  #   delete: false
+  #   i18n:
+  #     structure: single_file
+  #   files:
+  #     - name: "mission"
+  #       label: "Mission"
+  #       file: "src/pages/files/mission.yml"
+  #       description: "Our Mission"
+  #       i18n: true
+  #       fields:
+  #         - label: Title
+  #           name: title
+  #           widget: string
+  #           i18n: true
+  #         - label: Subtitle
+  #           name: subtitle
+  #           widget: string
+  #           i18n: true
+  #         - label: body
+  #           name: body
+  #           widget: markdown
+  #           i18n: true
+  #         - label: Image
+  #           name: image
+  #           widget: image
 
   - name: "posts"
     label: "Projects"
