@@ -6,6 +6,7 @@ module.exports = {
     locales: ["en", "fr", "it"],
     defaultLocale: "en",
   },
+  pageExtensions: ["mdx", "tsx"],
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       ...[
