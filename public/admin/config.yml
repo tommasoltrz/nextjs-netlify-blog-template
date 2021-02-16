@@ -6,9 +6,9 @@ public_folder: /images
 publish_mode: editorial_workflow
 
 i18n:
-  structure: single_file
-  locales: [en, it, fr]
-  default_locale: en
+    structure: single_file
+    locales: [en, it, fr]
+    default_locale: en
 
 collections:
   - name: "pages"
