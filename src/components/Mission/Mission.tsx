@@ -8,6 +8,7 @@ export type MissionProps = {
 };
 
 const Mission: React.FC<MissionProps> = ({ title, subtitle, body, image }) => {
+  console.log(body);
   return (
     <div className={styles.missionContainer}>
       <h2>{title}</h2>
