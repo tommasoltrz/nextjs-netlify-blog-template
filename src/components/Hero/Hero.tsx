@@ -7,10 +7,13 @@ export type HeroProps = {
 };
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
-  // console.log(body);
+  const heroImageStyle = {
+    backgroundImage: `url(${image})`,
+  };
   return (
-    <div className={styles.heroContainer}>
-      <h2>{title}</h2>
+    <div className={styles.heroContainer} style={heroImageStyle}>
+      <h1>{title}</h1>
+      <h4>{subtitle}</h4>
     </div>
   );
 };
