@@ -84,10 +84,16 @@ collections:
             name: body
             widget: markdown
             i18n: true
-          - label: navigation Items
-            name: "navigation"
-            widget: list
+          - label: Navigation Items
+            label_singular: "nagigation"
+            name: "tags"
             i18n: true
+            widget: list
+            field:
+              label: Tag
+               name: tag
+               widget: string
+
       - name: "value"
         label: "Value"
         file: "src/pages/files/value.yml"
