@@ -1,47 +1,50 @@
 @import "public/styles/variables";
 
 .heroContainer {
-  width: 100%;
-  height: 100vh;
-  max-height: 1000px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 60px 20px;
+  min-height: 100vh;
+  position: relative;
+  background-color: $off-grey;
+  padding: 200px 0 100px 0;
+  overflow: hidden;
   @media only screen and (min-width: $breakpoint-sm) {
-    padding: 60px 30px;
+    padding: 140px 0 100px 0;
   }
-  @media only screen and (min-width: $breakpoint-lg) {
-    padding: 60px;
-  }
-
   h1 {
-    padding-top: 40%;
-    margin-bottom: 20px;
-    @media only screen and (min-width: $breakpoint-sm) {
-      max-width: 80%;
-      padding-top: 40%;
-    }
-    @media only screen and (min-width: $breakpoint-lg) {
-      padding-top: 20%;
-      max-width: 60%;
-    }
+    margin-bottom: 15px;
   }
 
-  .lang {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+  .subtitle {
+    max-width: 250px;
+    line-height: 24px;
+  }
+
+  .textRow {
     display: flex;
-    & > * {
-      margin-left: 20px;
-      padding-bottom: 5px;
-      &.active {
-        border-bottom: 4px solid #fff;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imageRow {
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 100px;
+      right: 50%;
+      transform: translateX(50%);
+      opacity: 0.5;
+      width: 800px;
+      pointer-events: none;
+
+      @media only screen and (min-width: $breakpoint-sm) {
+        width: unset;
+        transform: translateX(0);
+        right: 0;
+        max-width: 100%;
+      }
+      @media only screen and (min-width: $breakpoint-md) {
+        position: relative;
+        top: unset;
+        opacity: 1;
       }
     }
   }

@@ -62,6 +62,10 @@ collections:
             name: image
             widget: image
             i18n: duplicate
+          - label: "Navigation Items"
+            name: "navigation"
+            widget: "list"
+            allow_add: true
       - name: "mission"
         label: "Mission"
         file: "src/pages/files/mission.yml"
