@@ -10,7 +10,7 @@ const HalfCircle: React.FC<HalfCircleProps> = ({ color }) => {
     backgroundImage: `url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none' fill='#111111'%3E%3Cpath d='M0 100q50-200 100 0'/%3E%3C/svg%3E")`,
   };
   return (
-    <div className={styles.container}>
+    <div>
       <svg
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
