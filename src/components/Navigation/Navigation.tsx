@@ -14,7 +14,7 @@ const Navigation: React.FC<NavigationProps> = ({ handleElClick }) => {
       <div
         className={`${styles.container} ${active ? styles.active : ""} grid`}
       >
-        <a onClick={() => handleElClick(0)}>What</a>
+        <p onClick={() => handleElClick(0)}>What</p>
         <p onClick={() => handleElClick(0)}>Why</p>
         <p onClick={() => handleElClick(0)}>Case Studies</p>
         <p onClick={() => handleElClick(0)}>Contact us</p>
