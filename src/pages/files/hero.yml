@@ -1,12 +1,12 @@
 en:
   image: /images/hero-desktop.svg
-  title: Big Data Algorithms for Sea and Fisheries.
+  title: Big Data Algorithms for Sea and Fisheries
   subtitle: Using Big Data for forecasts  and vessel tracking
 it:
-  title: Big Data Algorithms for Sea and Pesci.
+  title: Big Data Algorithms for Sea and Pesci
   subtitle: Using Big Data for forecasts  and vessel tracking
   image: /images/hero-desktop.svg
 fr:
-  title: Big Data Algorithms for Sea and Baguettes.
+  title: Big Data Algorithms for Sea and Baguettes
   subtitle: Using Big Data for forecasts  and vessel tracking
   image: /images/hero-desktop.svg
