@@ -62,13 +62,14 @@ collections:
             name: image
             widget: image
             i18n: duplicate
-          - label: "Site keywords"
-            name: "site_keywords"
+          - label: "Navigation Tags"
+            name: "navigation_tags"
+            i18n: true
             widget: "list"
-            summary: "{{fields.keyword.keyword}}"
+            summary: "{{fields.tag.tag}}"
             field:
-              label: Keyword
-              name: keyword
+              label: Tag
+              name: tag
               widget: "string"
       - name: "mission"
         label: "Mission"
