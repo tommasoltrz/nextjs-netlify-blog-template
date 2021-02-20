@@ -84,10 +84,10 @@ collections:
             name: body
             widget: markdown
             i18n: true
-          - label: Image
-            name: image
-            widget: image
-            i18n: duplicate
+          - label: navigation Items
+            name: "navigation"
+            widget: list
+            i18n: true
       - name: "value"
         label: "Value"
         file: "src/pages/files/value.yml"
