@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Halfcircle.module.scss";
+import styles from "./myhalfcircle.module.scss";
 export type HalfCircleProps = {
   color: string;
 };
