@@ -91,8 +91,8 @@ collections:
             widget: list
             field:
               label: Tag
-               name: tag
-               widget: string
+              name: tag
+              widget: string
 
       - name: "value"
         label: "Value"
