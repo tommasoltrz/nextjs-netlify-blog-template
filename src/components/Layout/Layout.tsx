@@ -11,8 +11,8 @@ export default function Layout({ children }: Props) {
   const executeScroll = () => {
     console.log(myRef);
   };
-  const onNavElClicked = (el: string) => {
-    console.log(el);
+  const onNavElClicked = (idx: number) => {
+    console.log(idx);
     console.log(myRef.current.children);
     myRef.current.children[2].scrollIntoView();
   };

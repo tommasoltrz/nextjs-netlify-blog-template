@@ -3,7 +3,7 @@ import Burger from "../Burger";
 import { useState } from "react";
 import styles from "./Navigation.module.scss";
 export type NavigationProps = {
-  handleElClick?: (idx: number) => any;
+  handleElClick?: (idx: number) => void;
 };
 
 const Navigation: React.FC<NavigationProps> = ({ handleElClick }) => {
