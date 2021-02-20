@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRef } from "react";
 import Navigation from "../Navigation/Navigation";
-import styles from "./Layout.module.scss";
+import styles from "./mylayout.module.scss";
 
 type Props = {
   children: React.ReactNode;
