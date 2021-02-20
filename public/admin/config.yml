@@ -62,10 +62,14 @@ collections:
             name: image
             widget: image
             i18n: duplicate
-          - label: "Navigation Items"
-            name: "navigation"
+          - label: "Site keywords"
+            name: "site_keywords"
             widget: "list"
-            allow_add: true
+            summary: "{{fields.keyword.keyword}}"
+            field:
+              label: Keyword
+              name: keyword
+              widget: "string"
       - name: "mission"
         label: "Mission"
         file: "src/pages/files/mission.yml"
