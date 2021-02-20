@@ -68,6 +68,7 @@ collections:
             widget: "list"
             summary: "{{fields.tag.tag}}"
             field:
+              i18n: true
               label: Tag
               name: tag
               widget: "string"
